@@ -19,8 +19,9 @@
         "vue.js"
     ],
     "scripts": {
-        "lint": "eslint . && prettier-package-json --write --tab-width=4 ./package.json",
-        "preversion": "export NODE_ENV=production && npm run lint",
+        "lint": "eslint .",
+        "package-lint": "prettier-package-json --write --tab-width=4 ./package.json",
+        "preversion": "export NODE_ENV=production && npm run lint && npm run package-lint",
         "postversion": "git push && git push --tags"
     },
     "devDependencies": {
