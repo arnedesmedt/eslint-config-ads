@@ -67,7 +67,14 @@ module.exports = {
             {
                 minItems: 1,
             },
-        ]
+        ],
+        'space-before-function-paren': ['error', 'always'],
+        'max-len': [
+            'error',
+            {
+                code: 120,
+            },
+        ],
     },
 
     parserOptions: {
