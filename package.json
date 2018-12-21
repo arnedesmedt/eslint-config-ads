@@ -1,0 +1,36 @@
+{
+    "private": false,
+    "name": "eslint-config-ads",
+    "description": "My eslint-config file",
+    "license": "MIT",
+    "author": "Arne De Smedt <arnedesmdt@gmail.com> (https://twitter.com/ArneSmedt)",
+    "homepage": "https://github.com/arnedesmedt/eslint-config-ads#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/arnedesmedt/eslint-config-ads.git"
+    },
+    "bugs": {
+        "url": "https://github.com/arnedesmedt/eslint-config-ads/issues"
+    },
+    "version": "1.0.0",
+    "main": "index.js",
+    "files": [
+        "/src",
+        "vue.js"
+    ],
+    "scripts": {
+        "lint": "eslint . && prettier-package-json --write --tab-width=4 ./package.json",
+        "preversion": "export NODE_ENV=production && npm run lint",
+        "postversion": "git push && git push --tags"
+    },
+    "devDependencies": {
+        "eslint": "^5.10.0",
+        "prettier-package-json": "^2.0.1"
+    },
+    "keywords": [
+        "config",
+        "eslint",
+        "javascript",
+        "vue"
+    ]
+}
