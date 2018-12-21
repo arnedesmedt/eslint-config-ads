@@ -77,12 +77,9 @@ module.exports = {
             'error',
             'multiline',
         ],
-        'space-before-function-paren': ['error', 'always'],
-        'max-len': [
+        'space-before-function-paren': [
             'error',
-            {
-                code: 120,
-            },
+            'always',
         ],
     },
 
