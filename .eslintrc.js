@@ -62,6 +62,12 @@ module.exports = {
         'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
         'sort-imports': 'error',
+        'function-paren-newline': [
+            'error',
+            {
+                minItems: 1,
+            },
+        ]
     },
 
     parserOptions: {
