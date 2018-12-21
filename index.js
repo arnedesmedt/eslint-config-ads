@@ -57,9 +57,7 @@ module.exports = {
         'sort-imports': 'error',
         'function-paren-newline': [
             'error',
-            {
-                minItems: 1,
-            },
+            'multiline',
         ],
         'space-before-function-paren': [
             'error',
